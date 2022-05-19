@@ -1,0 +1,77 @@
+# Copy and paste the below configuration in analysis_options.yaml
+
+analyzer:
+  exclude:
+    - lib/**/*.freezed.dart
+    - lib/**/*.g.dart
+    - lib/**/*.chopper.dart
+    - test/
+    - scan_card_lib/
+    - files/
+
+  language:
+    strict-raw-types: false
+
+  errors:
+    missing_return: error
+    avoid_empty_else: error
+    avoid_print: error
+    avoid_types_as_parameter_names: error
+    no_duplicate_case_values: error
+    always_declare_return_types: error
+    await_only_futures: error
+    camel_case_extensions: error
+    empty_catches: error
+    file_names: error
+    unnecessary_new: error
+
+
+linter:
+  rules:
+    - always_use_package_imports
+    - avoid_empty_else
+    - always_declare_return_types
+    - always_put_control_body_on_new_line
+    - annotate_overrides
+    - avoid_bool_literals_in_conditional_expressions
+    - avoid_print
+    - avoid_relative_lib_imports
+    - avoid_types_as_parameter_names
+    - cancel_subscriptions
+    - close_sinks
+    - empty_statements
+    - hash_and_equals
+    - no_duplicate_case_values
+    - prefer_void_to_null
+    # - use_key_in_widget_constructors
+    # - avoid_final_parameters
+    - avoid_function_literals_in_foreach_calls
+    - avoid_init_to_null
+    - avoid_multiple_declarations_per_line
+    - avoid_renaming_method_parameters
+    - avoid_return_types_on_setters
+    - avoid_returning_null_for_void
+    - avoid_unnecessary_containers
+    - await_only_futures
+    - camel_case_extensions
+    - camel_case_types
+    - empty_catches
+    - empty_constructor_bodies
+    - file_names
+    - flutter_style_todos
+    # - no_leading_underscores_for_library_prefixes
+    - library_names
+    - prefer_contains
+    # - prefer_double_quotes
+    - prefer_final_fields
+    - prefer_if_null_operators
+    - prefer_is_empty
+    - prefer_is_not_empty
+    - prefer_null_aware_method_calls
+    - recursive_getters
+    - require_trailing_commas #experimental
+    - sized_box_for_whitespace
+    # - sized_box_shrink_expand
+    - type_init_formals
+    - unnecessary_new
+    - use_rethrow_when_possible
